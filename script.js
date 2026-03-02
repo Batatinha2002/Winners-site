@@ -83,26 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statsSection = document.getElementById('stats');
     if (statsSection) observer.observe(statsSection);
 
-    /* --- Parallax Video Background & Audio Toggle --- */
-    const bgVideo = document.getElementById('bg-video');
-    const audioToggleBtn = document.getElementById('audio-toggle');
-    const iconMuted = document.getElementById('icon-muted');
-    const iconUnmuted = document.getElementById('icon-unmuted');
 
-    // Audio Toggle Logic
-    if (bgVideo && audioToggleBtn) {
-        audioToggleBtn.addEventListener('click', () => {
-            if (bgVideo.muted) {
-                bgVideo.muted = false;
-                iconMuted.style.display = 'none';
-                iconUnmuted.style.display = 'block';
-            } else {
-                bgVideo.muted = true;
-                iconMuted.style.display = 'block';
-                iconUnmuted.style.display = 'none';
-            }
-        });
-    }
 
     /* --- Animated Counters --- */
     let countersStarted = false;
