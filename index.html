@@ -67,46 +67,19 @@
         <a href="#aplicacao" class="mobile-link gold">Aplicar Agora</a>
     </nav>
 
-    <!-- FIXED BACKGROUND VIDEO -->
+    <!-- FULL PAGE VIDEO BACKGROUND -->
     <div class="fixed-video-bg">
-        <video id="bg-video" autoplay muted loop playsinline
+        <video autoplay muted loop playsinline id="hero-video" class="hero-video"
             poster="https://via.placeholder.com/1920x1080/0a0a0a/ffffff?text=Winners+Club+Video+Fallback">
-            <source src="Winners  - Sameday.mp4" type="video/mp4">
+            <source src="202603020948.mp4" type="video/mp4">
             Seu navegador não suporta vídeos.
         </video>
-        <div class="video-overlay"></div>
+        <div class="global-video-overlay"></div>
     </div>
-
-    <!-- AUDIO TOGGLE BUTTON (Premium) -->
-    <button id="audio-toggle" class="audio-toggle-btn premium-pulse" aria-label="Ativar/Desativar Som">
-        <span class="audio-text">Ouvir Mensagem</span>
-        <svg id="icon-muted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-            <line x1="23" y1="9" x2="17" y2="15"></line>
-            <line x1="17" y1="9" x2="23" y2="15"></line>
-        </svg>
-        <svg id="icon-unmuted" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-        </svg>
-    </button>
 
     <main>
         <!-- Section 1: Hero -->
         <section class="hero" id="inicio">
-            <!-- Video Background -->
-            <div class="hero-video-wrapper">
-                <!-- Se o vídeo "Winners  - Sameday.mp4" não carregar, mostrar o fundo escuro do ".hero" -->
-                <video autoplay muted loop playsinline id="hero-video" class="hero-video"
-                    poster="https://via.placeholder.com/1920x1080/0a0a0a/ffffff?text=Winners+Club+Video+Fallback">
-                    <source src="Winners  - Sameday.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-                <div class="hero-overlay"></div>
-            </div>
 
             <div class="container hero-container">
                 <div class="hero-content animate-hero">
@@ -133,7 +106,7 @@
         </section>
 
         <!-- Section 2: O que é (Pilares) -->
-        <section class="section bg-darker" id="sobre">
+        <section class="section" id="sobre">
             <div class="container">
                 <div class="section-header animate-slide-up">
                     <h2>O que é o <span class="gold-text">Winners Club</span>?</h2>
@@ -194,7 +167,7 @@
         </section>
 
         <!-- Section 4: Entregáveis -->
-        <section class="section bg-darker" id="entregaveis">
+        <section class="section" id="entregaveis">
             <div class="container">
                 <div class="section-header animate-slide-up">
                     <h2>O que <span class="gold-text">Você Recebe</span></h2>
@@ -262,7 +235,7 @@
         </section>
 
         <!-- Section 6: Depoimentos -->
-        <section class="section bg-darker" id="depoimentos">
+        <section class="section" id="depoimentos">
             <div class="container">
                 <div class="section-header animate-slide-up">
                     <h2>Palavras de quem <span class="gold-text">Executa</span></h2>
@@ -368,7 +341,7 @@
         </section>
 
         <!-- Section 8: FAQ -->
-        <section class="section bg-darker" id="faq">
+        <section class="section" id="faq">
             <div class="container faq-container">
                 <div class="section-header animate-slide-up">
                     <h2>Dúvidas <span class="gold-text">Frequentes</span></h2>
