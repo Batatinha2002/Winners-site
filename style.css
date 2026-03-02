@@ -121,6 +121,70 @@ h6 {
 }
 
 /* ==========================================================================
+   Custom Cursor
+   ========================================================================== */
+body {
+    cursor: none;
+    /* Hide default cursor */
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    cursor: none;
+    /* Keep hidden on interactive elements to use custom */
+}
+
+.cursor {
+    width: 8px;
+    height: 8px;
+    background-color: var(--gold);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.cursor-follower {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    /* Gold outline */
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, border-color 0.3s;
+}
+
+/* Hover States for Cursor */
+.cursor.active {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+.cursor-follower.active {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+
+
+
+/* ==========================================================================
    Navigation
    ========================================================================== */
 .navbar {
@@ -496,8 +560,8 @@ h6 {
 
 .card:hover {
     border-color: rgba(212, 175, 55, 0.4);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
 .card h3 {
