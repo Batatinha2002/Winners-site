@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winners Club | Winners Club</title>
+    <meta name="description" content="Mentoria e comunidade exclusiva para empresários e líderes do Winner's Club.">
+
+    <!-- Open Graph Placeholders -->
+    <meta property="og:title" content="Winners Club">
+    <meta property="og:description" content="Winners Club.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Winners+Club+OG+Image">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">WINNERS CLUB</a>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#para-quem">Para Quem</a>
+                <a href="#entregaveis">O Que Você Recebe</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#como-funciona">Como Funciona</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <!-- CTA Configurable WhatsApp Link -->
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Winners%20Club."
+                class="btn-nav" target="_blank" rel="noopener noreferrer">Conversa Estratégica</a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <nav class="mobile-menu" id="mobile-menu">
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#para-quem" class="mobile-link">Para Quem</a>
+        <a href="#entregaveis" class="mobile-link">O Que Recebe</a>
+        <a href="#resultados" class="mobile-link">Resultados</a>
+        <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+        <a href="#como-funciona" class="mobile-link">Como Funciona</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="#aplicacao" class="mobile-link gold">Aplicar Agora</a>
+    </nav>
+
+    <!-- FIXED BACKGROUND VIDEO -->
+    <div class="fixed-video-bg">
+        <video id="bg-video" autoplay muted loop playsinline
+            poster="https://via.placeholder.com/1920x1080/0a0a0a/ffffff?text=Winners+Club+Video+Fallback">
+            <source src="Winners  - Sameday.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- AUDIO TOGGLE BUTTON (Premium) -->
+    <button id="audio-toggle" class="audio-toggle-btn premium-pulse" aria-label="Ativar/Desativar Som">
+        <span class="audio-text">Ouvir Mensagem</span>
+        <svg id="icon-muted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg id="icon-unmuted" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+    </button>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero" id="inicio">
+            <!-- Video Background -->
+            <div class="hero-video-wrapper">
+                <!-- Se o vídeo "Winners  - Sameday.mp4" não carregar, mostrar o fundo escuro do ".hero" -->
+                <video autoplay muted loop playsinline id="hero-video" class="hero-video"
+                    poster="https://via.placeholder.com/1920x1080/0a0a0a/ffffff?text=Winners+Club+Video+Fallback">
+                    <source src="Winners  - Sameday.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content animate-hero">
+                    <h1 id="hero-title">Winners <br>Club</h1>
+                    <p class="hero-subtitle">Não é apenas teoria. É execução guiada, networking de altíssimo nível e
+                        clareza
+                        para o seu próximo grande salto.</p>
+
+                    <div class="hero-ctas">
+                        <a href="#aplicacao" class="btn-hero">Quero Participar</a>
+                        <a href="https://wa.me/5511999999999?text=Quero%20uma%20conversa%20estrat%C3%A9gica"
+                            class="btn-hero" target="_blank" rel="noopener noreferrer">Conversa Estratégica</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="scroll-indicator animate-fade delay-3">
+                <span>Descubra Mais</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: O que é (Pilares) -->
+        <section class="section bg-darker" id="sobre">
+            <div class="container">
+                <div class="section-header animate-slide-up">
+                    <h2>O que é o <span class="gold-text">Winners Club</span>?</h2>
+                    <p>Muitas mentorias vendem apenas motivação. Nós entregamos um ecossistema projetado para
+                        transformar o seu cenário atual.</p>
+                </div>
+
+                <div class="grid-4 pillars-grid">
+                    <div class="card animate-slide-up delay-1">
+                        <h3>Mentoria</h3>
+                        <p>Acesso direto a mentores com experiência comprovada no campo de batalha empresarial.</p>
+                    </div>
+                    <div class="card animate-slide-up delay-2">
+                        <h3>Comunidade</h3>
+                        <p>Conviva com empresários que jogam o mesmo jogo que você. Você é a média das pessoas que te
+                            cercam.</p>
+                    </div>
+                    <div class="card animate-slide-up delay-3">
+                        <h3>Execução</h3>
+                        <p>Planos de ação práticos para aplicar na sua empresa imediatamente, sem enrolação.</p>
+                    </div>
+                    <div class="card animate-slide-up delay-4">
+                        <h3>Crescimento</h3>
+                        <p>Resultados que se traduzem em previsibilidade, lucro e qualidade de vida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Para quem é -->
+        <section class="section" id="para-quem">
+            <div class="container">
+                <div class="two-cols">
+                    <div class="col animate-slide-right">
+                        <h2 class="gold-text">Este grupo É PARA você que:</h2>
+                        <ul class="check-list mt-2">
+                            <li>Já possui um negócio rodando e quer escalar.</li>
+                            <li>Sente-se solitário na tomada de decisões importantes.</li>
+                            <li>Quer melhorar processos, vendas e liderança.</li>
+                            <li>Está disposto a ouvir verdades difíceis para evoluir.</li>
+                        </ul>
+                    </div>
+                    <div class="col border-left animate-slide-left">
+                        <h2 class="text-muted">Este grupo NÃO É para:</h2>
+                        <ul class="cross-list mt-2">
+                            <li>Quem busca atalhos "mágicos" para ficar rico.</li>
+                            <li>Pessoas que dão desculpas em vez de executar.</li>
+                            <li>Tímidos em compartilhar erros ou pedir ajuda.</li>
+                            <li>Quem não respeita o tempo dos outros membros.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="center-btn mt-4 animate-slide-up">
+                    <a href="#aplicacao" class="btn-primary">Estou Pronto para Entrar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Entregáveis -->
+        <section class="section bg-darker" id="entregaveis">
+            <div class="container">
+                <div class="section-header animate-slide-up">
+                    <h2>O que <span class="gold-text">Você Recebe</span></h2>
+                    <p>Uma esteira completa de acompanhamento para não deixar você estagnar.</p>
+                </div>
+
+                <div class="grid-3 deliverables-grid">
+                    <div class="deliverable-item animate-slide-up delay-1">
+                        <div class="icon gold">🗓</div>
+                        <h4>Encontros Mensais</h4>
+                        <p>Sessões online e presenciais ao vivo para discussão de estratégias.</p>
+                    </div>
+                    <div class="deliverable-item animate-slide-up delay-2">
+                        <div class="icon gold">📁</div>
+                        <h4>Acervo de Materiais</h4>
+                        <p>Acesso vitalício aos frameworks de gestão e processos da nossa empresa.</p>
+                    </div>
+                    <div class="deliverable-item animate-slide-up delay-3">
+                        <div class="icon gold">👥</div>
+                        <h4>Acompanhamento 1a1</h4>
+                        <p>Diagnóstico individual para mapear seus gargalos atuais e destravar o crescimento.</p>
+                    </div>
+                    <div class="deliverable-item animate-slide-up delay-4">
+                        <div class="icon gold">🚀</div>
+                        <h4>Desafios de Execução</h4>
+                        <p>Metas quinzenais de curto prazo para manter você em movimento.</p>
+                    </div>
+                    <div class="deliverable-item animate-slide-up delay-5">
+                        <div class="icon gold">💬</div>
+                        <h4>Comunidade 24/7</h4>
+                        <p>Um grupo exclusivo no WhatsApp apenas para membros selecionados a dedo.</p>
+                    </div>
+                    <div class="deliverable-item animate-slide-up delay-6">
+                        <div class="icon gold">🎟</div>
+                        <h4>Eventos Presenciais</h4>
+                        <p>Passaporte garantido para os encontros presenciais de imersão do Winners Club.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Resultados (Counters) -->
+        <section class="section" id="resultados">
+            <div class="container">
+                <div class="section-header animate-slide-up">
+                    <h2>Nossos <span class="gold-text">Resultados</span></h2>
+                    <p>Os números refletem o compromisso dos nossos membros com a execução.</p>
+                </div>
+
+                <div class="stats-grid" id="stats">
+                    <div class="stat-box animate-scale">
+                        <h3 class="counter gold-text" data-target="150">0</h3>
+                        <p>Membros Ativos</p>
+                    </div>
+                    <div class="stat-box animate-scale delay-1">
+                        <h3 class="counter gold-text" data-target="300">0</h3><span>%</span>
+                        <p>Crescimento Médio</p>
+                    </div>
+                    <div class="stat-box animate-scale delay-2">
+                        <h3 class="counter gold-text" data-target="50">0</h3><span>+</span>
+                        <p>Eventos Realizados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Depoimentos -->
+        <section class="section bg-darker" id="depoimentos">
+            <div class="container">
+                <div class="section-header animate-slide-up">
+                    <h2>Palavras de quem <span class="gold-text">Executa</span></h2>
+                </div>
+
+                <div class="testimonial-carousel animate-slide-up">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <!-- Depoimento 1 -->
+                        <div class="testimonial-card">
+                            <span class="quote-mark gold-text">“</span>
+                            <p class="testimonial-text">"O Winners Club me deu a direção que eu precisava. Minha empresa
+                                faturava R$ 50k/mês e estava estagnada. Com a ajuda da comunidade, bati os R$ 200k
+                                ajustando meu time comercial."</p>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/60" alt="Foto do Fulano" class="author-img">
+                                <div>
+                                    <h5>João Silva</h5>
+                                    <span>CEO @ EmpresaTech • São Paulo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 2 -->
+                        <div class="testimonial-card">
+                            <span class="quote-mark gold-text">“</span>
+                            <p class="testimonial-text">"Os eventos presenciais me colocaram na mesma mesa de pessoas
+                                que admirava no Instagram. Hoje, dois deles são meus sócios em um novo negócio."</p>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/60" alt="Foto da Ciclana" class="author-img">
+                                <div>
+                                    <h5>Maria Costa</h5>
+                                    <span>Diretora de Operações • Curitiba</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 3 -->
+                        <div class="testimonial-card">
+                            <span class="quote-mark gold-text">“</span>
+                            <p class="testimonial-text">"Parei de apagar incêndios e passei a ser empresário de verdade.
+                                O nível de exigência do grupo é alto e isso te força a melhorar."</p>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/60" alt="Foto do Beltrano" class="author-img">
+                                <div>
+                                    <h5>Pedro Souza</h5>
+                                    <span>Fundador @ AgenciaZ • Rio de Janeiro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button id="prev-btn" class="nav-btn">&larr;</button>
+                        <button id="next-btn" class="nav-btn">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Como Funciona -->
+        <section class="section" id="como-funciona">
+            <div class="container">
+                <div class="section-header animate-slide-up">
+                    <h2>Como <span class="gold-text">Funciona</span></h2>
+                    <p>O processo seletivo garante a qualidade e o nível da nossa comunidade.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-step animate-slide-up">
+                        <div class="step-marker">1</div>
+                        <div class="step-content">
+                            <h4>Aplicação</h4>
+                            <p>Você preenche o formulário ao final desta página contando um pouco do seu momento atual.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step animate-slide-up delay-1">
+                        <div class="step-marker">2</div>
+                        <div class="step-content">
+                            <h4>Conversa</h4>
+                            <p>Nosso time entra em contato pelo WhatsApp para alinhar expectativas e analisar seu
+                                perfil.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step animate-slide-up delay-2">
+                        <div class="step-marker">3</div>
+                        <div class="step-content">
+                            <h4>Aprovação</h4>
+                            <p>Caso aprovado, você recebe o convite oficial, assina o termo de adesão e conclui seu
+                                acesso.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step animate-slide-up delay-3">
+                        <div class="step-marker">4</div>
+                        <div class="step-content">
+                            <h4>Onboarding & Plano</h4>
+                            <p>Entrada na comunidade, acesso aos materiais e a primeira sessão para cravar suas metas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: FAQ -->
+        <section class="section bg-darker" id="faq">
+            <div class="container faq-container">
+                <div class="section-header animate-slide-up">
+                    <h2>Dúvidas <span class="gold-text">Frequentes</span></h2>
+                </div>
+
+                <div class="accordion animate-slide-up delay-1">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Qual a duração do programa Winners Club?</button>
+                        <div class="accordion-content">
+                            <p>A assinatura padrão é de 12 meses. Após esse período, você pode optar pela renovação para
+                                se manter atualizado e acompanhando a comunidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Preciso ter empresa aberta para participar?</button>
+                        <div class="accordion-content">
+                            <p>O foco do grupo são empreendedores e líderes que já operam e desejam tracionar
+                                resultados. Porém, se você ocupa forte papel de decisão e liderança, tem grande
+                                potencial de absorção.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Qual o valor do investimento?</button>
+                        <div class="accordion-content">
+                            <p>O passe para o nosso mastermind varia de acordo com lotes de expansão de vagas. Todo o
+                                lado financeiro e escopo de acesso será detalhado na sua call estratégica após a
+                                aplicação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Aplicação -->
+        <section class="section" id="aplicacao">
+            <div class="container">
+                <div class="form-wrapper animate-slide-up">
+                    <div class="form-header">
+                        <h2>Sua <span class="gold-text">Aplicação</span>.</h2>
+                        <p>Vagas limitadas para mantermos a proximidade dos membros vivos.</p>
+                    </div>
+
+                    <form id="application-form" class="application-form">
+                        <div class="form-group">
+                            <label for="nome">Qual o seu Nome Completo?</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp com DDD</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="perfil">Seu Perfil Principal</label>
+                            <select id="perfil" name="perfil" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Empresario">Empresário/Dono de negócio</option>
+                                <option value="Lider">Líder/Gestor (CLT)</option>
+                                <option value="Especialista">Profissional Autônomo/Especialista</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="desafio">Qual é o seu maior desafio atual?</label>
+                            <textarea id="desafio" name="desafio" rows="4" required
+                                placeholder="Conte brevemente o que trava seus resultados..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-submit">Enviar e Chamar no WhatsApp</button>
+                        <p class="form-disclaimer text-muted">* Ao clicar você será redirecionado para falar com nossa
+                            equipe após o envio.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer border-top bg-darker">
+        <div class="container footer-content">
+            <div class="brand">
+                <a href="#" class="logo">WINNERS<span class="gold">CLUB</span></a>
+                <p class="text-muted mt-1">Sua comunidade tática e networking imbatível.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="text-muted">&copy; 2026 Winners Club. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP and MatchMedia -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
