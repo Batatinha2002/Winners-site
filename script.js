@@ -223,52 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* --- Testimonial Carousel --- */
-    const track = document.getElementById('testimonial-track');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
 
-    if (track && prevBtn && nextBtn) {
-        let currentIndex = 0;
-        const cards = track.querySelectorAll('.testimonial-card');
-        const totalCards = cards.length;
-
-        function updateCarousel() {
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalCards;
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-            updateCarousel();
-        });
-    }
-
-    /* --- Form Submission (Construct WhatsApp URL) --- */
-    const form = document.getElementById('application-form');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const nome = document.getElementById('nome').value;
-            const perfil = document.getElementById('perfil').value;
-            const desafio = document.getElementById('desafio').value;
-
-            // Format message for WhatsApp
-            const message = `Olá, vim pelo formulário de aplicação. \n\n*Nome:* ${nome}\n*Perfil:* ${perfil}\n*Desafio Atual:* ${desafio}`;
-            const encodedMessage = encodeURIComponent(message);
-
-            // Your WhatsApp Number here
-            const waNumber = '5511999999999';
-            const waLink = `https://wa.me/${waNumber}?text=${encodedMessage}`;
-
-            // Open window
-            window.open(waLink, '_blank');
-        });
-    }
 
 });
