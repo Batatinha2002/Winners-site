@@ -239,58 +239,25 @@
                         <h2>Palavras de quem <span class="gold-text">Executa</span></h2>
                     </div>
 
-                    <div class="testimonial-carousel animate-slide-up">
-                        <div class="testimonial-track" id="testimonial-track">
-                            <!-- Depoimento 1 -->
-                            <div class="testimonial-card">
-                                <span class="quote-mark gold-text">“</span>
-                                <p class="testimonial-text">"O Winners Club me deu a direção que eu precisava. Minha
-                                    empresa
-                                    faturava R$ 50k/mês e estava estagnada. Com a ajuda da comunidade, bati os R$ 200k
-                                    ajustando meu time comercial."</p>
-                                <div class="testimonial-author">
-                                    <img src="https://via.placeholder.com/60" alt="Foto do Fulano" class="author-img">
-                                    <div>
-                                        <h5>João Silva</h5>
-                                        <span>CEO @ EmpresaTech • São Paulo</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Depoimento 2 -->
-                            <div class="testimonial-card">
-                                <span class="quote-mark gold-text">“</span>
-                                <p class="testimonial-text">"Os eventos presenciais me colocaram na mesma mesa de
-                                    pessoas
-                                    que admirava no Instagram. Hoje, dois deles são meus sócios em um novo negócio."</p>
-                                <div class="testimonial-author">
-                                    <img src="https://via.placeholder.com/60" alt="Foto da Ciclana" class="author-img">
-                                    <div>
-                                        <h5>Maria Costa</h5>
-                                        <span>Diretora de Operações • Curitiba</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Depoimento 3 -->
-                            <div class="testimonial-card">
-                                <span class="quote-mark gold-text">“</span>
-                                <p class="testimonial-text">"Parei de apagar incêndios e passei a ser empresário de
-                                    verdade.
-                                    O nível de exigência do grupo é alto e isso te força a melhorar."</p>
-                                <div class="testimonial-author">
-                                    <img src="https://via.placeholder.com/60" alt="Foto do Beltrano" class="author-img">
-                                    <div>
-                                        <h5>Pedro Souza</h5>
-                                        <span>Fundador @ AgenciaZ • Rio de Janeiro</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="values-grid mt-4"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="card animate-slide-up" style="text-align: center; padding: 3rem 2rem;">
+                            <div class="value-icon gold-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;">🎯</div>
+                            <h3>Foco Extremo</h3>
+                            <p class="text-muted mt-1">Mais do que networking, somos um ambiente de execução focada.
+                                Aqui não há espaço para teóricos, apenas para quem faz acontecer.</p>
                         </div>
-
-                        <div class="carousel-controls">
-                            <button id="prev-btn" class="nav-btn">&larr;</button>
-                            <button id="next-btn" class="nav-btn">&rarr;</button>
+                        <div class="card animate-slide-up delay-1" style="text-align: center; padding: 3rem 2rem;">
+                            <div class="value-icon gold-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;">🤝</div>
+                            <h3>Pele em Risco</h3>
+                            <p class="text-muted mt-1">Todos na mesa estão construindo algo real. Compartilhamos
+                                bastidores, erros e acertos sem filtros para um crescimento honesto.</p>
+                        </div>
+                        <div class="card animate-slide-up delay-2" style="text-align: center; padding: 3rem 2rem;">
+                            <div class="value-icon gold-text" style="font-size: 2.5rem; margin-bottom: 1.5rem;">📈</div>
+                            <h3>Crescimento Mútuo</h3>
+                            <p class="text-muted mt-1">O resultado do grupo é a soma dos resultados individuais. Quando
+                                um membro destrava e acelera, todos ao redor ganham.</p>
                         </div>
                     </div>
                 </div>
@@ -380,42 +347,15 @@
                     <div class="form-wrapper animate-slide-up">
                         <div class="form-header">
                             <h2>Sua <span class="gold-text">Vaga</span>.</h2>
-                            <p>Preencha os dados e fale com nossa equipe.</p>
+                            <p>Toque no botão abaixo para falar diretamente com nossa equipe pelo WhatsApp.</p>
                         </div>
 
-                        <form id="application-form" class="application-form">
-                            <div class="form-group">
-                                <label for="nome">Qual o seu Nome Completo?</label>
-                                <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="whatsapp">WhatsApp com DDD</label>
-                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="perfil">Seu Perfil Principal</label>
-                                <select id="perfil" name="perfil" required>
-                                    <option value="" disabled selected>Selecione uma opção</option>
-                                    <option value="Empresario">Empresário/Dono de negócio</option>
-                                    <option value="Lider">Líder/Gestor (CLT)</option>
-                                    <option value="Especialista">Profissional Autônomo/Especialista</option>
-                                    <option value="Outro">Outro</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="desafio">Qual é o seu maior desafio atual?</label>
-                                <textarea id="desafio" name="desafio" rows="4" required
-                                    placeholder="Conte brevemente o que trava seus resultados..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn-primary btn-submit">Enviar e Chamar no WhatsApp</button>
-                            <p class="form-disclaimer text-muted">* Ao clicar você será redirecionado para falar com
-                                nossa
-                                equipe após o envio.</p>
-                        </form>
+                        <div class="center-content text-center mt-4">
+                            <a href="https://wa.me/55996502738?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20uma%20vaga%20no%20Winners%20Club."
+                                class="btn-primary" target="_blank" rel="noopener noreferrer"
+                                style="display: inline-block; padding: 1.2rem 3rem; font-size: 1.1rem; width: auto;">Falar
+                                com a Equipe no WhatsApp</a>
+                        </div>
                     </div>
                 </div>
             </section>
