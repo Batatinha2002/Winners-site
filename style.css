@@ -1124,8 +1124,33 @@ textarea {
         text-align: center;
     }
 
+    .hero h1 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+    }
+
     .hero-subtitle {
-        margin: 0 auto 2.5rem auto;
+        font-size: 1rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    .section-header h2 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .para-quem-list-wrapper {
+        padding: 0 1rem;
+    }
+
+    .check-list li,
+    .cross-list li {
+        font-size: 1.05rem;
+        padding-left: 28px;
+        margin-bottom: 1.25rem;
+    }
+
+    .check-list li::before {
+        font-size: 1.05rem;
+        top: 2px;
     }
 
     .hero-ctas {
@@ -1134,7 +1159,8 @@ textarea {
         gap: 1rem;
     }
 
-    .btn-hero {
+    .btn-hero,
+    .btn-primary {
         width: 100%;
         text-align: center;
         padding: 1rem;
@@ -1155,10 +1181,59 @@ textarea {
 
     .section-header {
         margin-bottom: 3rem;
+        padding: 0 1rem;
     }
 
     .card {
-        padding: 1.5rem;
+        padding: 1.5rem !important;
+        /* Override inline style on values grid */
+    }
+
+    .values-grid {
+        gap: 1rem !important;
+        padding: 0 1rem;
+    }
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    transition: var(--transition);
+    animation: pulse 2s infinite;
+}
+
+.floating-whatsapp svg {
+    width: 35px;
+    height: 35px;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
 }
 
