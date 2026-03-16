@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winners Club | Winners Club</title>
+    <title>Winners Club | The Exclusive Society</title>
     <meta name="description" content="Mentoria e comunidade exclusiva para empresários e líderes do Winner's Club.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
     <link rel="shortcut icon" href="favicon.svg?v=2">
@@ -18,463 +17,364 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;700&display=swap">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;700&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;700&display=swap"
-            rel="stylesheet">
-    </noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Oswald:wght@200;300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="preload" href="style.css" as="style">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div> <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scroll-progress"></div>
 
-    <!-- Navigation -->
-    <header class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo" fetchpriority="high">WINNERS CLUB</a>
-            <nav class="nav-links">
-                <a href="#sobre">Sobre</a>
-                <a href="#para-quem">Para Quem</a>
-                <a href="#entregaveis">O Que Você Recebe</a>
-                <a href="#resultados">Resultados</a>
-                <a href="#cultura">A Cultura</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-            <!-- CTA Configurable WhatsApp Link -->
-            <a href="https://wa.me/55996502738?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Winners%20Club."
-                class="btn-nav" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Noise Background -->
+    <div class="noise"></div>
+
+    <!-- Minimalist Nav -->
+    <nav class="nav-avant">
+        <a href="#" class="nav-logo link-hover hover-target">WINNERS CLUB</a>
+        
+        <div class="nav-links-desktop">
+            <a href="#sobre" class="link-hover hover-target">Sobre</a>
+            <a href="#para-quem" class="link-hover hover-target">Para Quem</a>
+            <a href="#entregaveis" class="link-hover hover-target">O Que Recebe</a>
+            <a href="#resultados" class="link-hover hover-target">Resultados</a>
+            <a href="#cultura" class="link-hover hover-target">Cultura</a>
+            <a href="#faq" class="link-hover hover-target">FAQ</a>
+            <a href="https://wa.me/55996502738?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Winners%20Club." class="link-hover hover-target gold-text" target="_blank" rel="noopener">WhatsApp</a>
         </div>
-    </header>
+
+        <button class="nav-menu-btn link-hover hover-target" id="mobile-toggle" style="display: none;">Menu [ + ]</button>
+        <script>
+            if (window.innerWidth <= 1000) {
+                document.getElementById('mobile-toggle').style.display = 'block';
+            }
+            window.addEventListener('resize', () => {
+                if (window.innerWidth <= 1000) {
+                    document.getElementById('mobile-toggle').style.display = 'block';
+                } else {
+                    document.getElementById('mobile-toggle').style.display = 'none';
+                }
+            });
+        </script>
+    </nav>
 
     <!-- Mobile Menu Overlay -->
     <nav class="mobile-menu" id="mobile-menu">
-        <a href="#sobre" class="mobile-link">Sobre</a>
-        <a href="#para-quem" class="mobile-link">Para Quem</a>
-        <a href="#entregaveis" class="mobile-link">O Que Recebe</a>
-        <a href="#resultados" class="mobile-link">Resultados</a>
-        <a href="#cultura" class="mobile-link">A Cultura</a>
-        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="#sobre" class="mobile-link hover-target">Sobre</a>
+        <a href="#para-quem" class="mobile-link hover-target">Para Quem</a>
+        <a href="#entregaveis" class="mobile-link hover-target">O Que Recebe</a>
+        <a href="#resultados" class="mobile-link hover-target">Resultados</a>
+        <a href="#cultura" class="mobile-link hover-target">A Cultura</a>
+        <a href="#faq" class="mobile-link hover-target">FAQ</a>
         <a href="https://wa.me/55996502738?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Winners%20Club."
-            class="mobile-link gold" target="_blank" rel="noopener noreferrer">Aplicar Agora</a>
+            class="mobile-link gold hover-target" target="_blank" rel="noopener">Aplicar Agora</a>
     </nav>
 
-    <!-- FULL PAGE VIDEO BACKGROUND -->
-    <div class="fixed-video-bg">
-        <video autoplay muted loop playsinline id="hero-video" class="hero-video" poster="poster.jpg"
-            preload="metadata">
-            <source src="bg-compressed.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-        </video>
-        <div class="global-video-overlay"></div>
+    <!-- Smooth Scroll Wrapper -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Splitted Immersive -->
+            <section class="hero-v3">
+                <div class="hero-video-wrapper" id="hero-bg">
+                    <video autoplay muted loop playsinline poster="poster.jpg">
+                        <source src="bg-compressed.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="hero-content-v3">
+                    <h1 class="hero-super-title anim-title">WINNERS</h1>
+                    <h2 class="hero-sub-title anim-sub">CLUB</h2>
+                    <div style="max-width: 600px; margin: 3rem auto 0; font-family: var(--font-body); font-size: 1.2rem; color: #fff; opacity: 0.9;" class="anim-sub">
+                        Não é apenas teoria. <strong style="color:var(--gold-primary); font-weight:normal;">É execução guiada</strong>, networking de altíssimo nível e clareza para o seu próximo grande salto.
+                    </div>
+                    <div class="hero-ctas" style="margin-top: 3rem;">
+                        <a href="#aplicacao-form" class="btn-avant hover-target anim-sub">Quero Participar</a>
+                    </div>
+                </div>
+
+                <div class="hero-badge hover-target">
+                    <svg viewBox="0 0 100 100">
+                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+                        <text>
+                            <textPath href="#circlePath" startOffset="0%" font-family="'Space Grotesk'" font-size="9" letter-spacing="4px">
+                                AUMENTO DE FATURAMENTO • CRESCIMENTO • 
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+                
+                <div class="scroll-indicator-line"></div>
+            </section>
+
+            <!-- Mind Blowing Horizontal Scroll (O QUE É / PILARES) -->
+            <section class="horizontal-scroll-wrapper" id="sobre">
+                <!-- Parallax BG Text -->
+                <div class="h-bg-text" id="h-bg-text">O QUE É?</div>
+                
+                <div class="horizontal-scroll-container" id="h-container">
+                    
+                    <!-- Panel 1 -->
+                    <div class="h-panel">
+                        <div class="h-panel-content">
+                            <div class="h-title-block">
+                                <h2 data-text="01. MENTORIA" class="hover-target">01. MENTORIA</h2>
+                            </div>
+                            <div class="h-desc-block">
+                                <strong style="color:var(--gold-primary); font-family:var(--font-bold); font-size:1.5rem; letter-spacing:2px;">EXPERIÊNCIA</strong><br>
+                                Acesso direto a mentores com experiência comprovada no campo de batalha empresarial. Uma comunidade de empresários focada em crescimento, faturamento e cultura de sucesso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2 -->
+                    <div class="h-panel">
+                        <div class="h-panel-content">
+                            <div class="h-title-block">
+                                <h2 data-text="02. COMUNIDADE" class="hover-target">02. COMUNIDADE</h2>
+                            </div>
+                            <div class="h-desc-block">
+                                <strong style="color:var(--gold-primary); font-family:var(--font-bold); font-size:1.5rem; letter-spacing:2px;">O AMBIENTE</strong><br>
+                                Conviva com empresários que jogam o mesmo jogo que você. Você é a média das pessoas que te cercam.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3 -->
+                    <div class="h-panel">
+                        <div class="h-panel-content">
+                            <div class="h-title-block">
+                                <h2 data-text="03. EXECUÇÃO" class="hover-target">03. EXECUÇÃO</h2>
+                            </div>
+                            <div class="h-desc-block">
+                                <strong style="color:var(--gold-primary); font-family:var(--font-bold); font-size:1.5rem; letter-spacing:2px;">A PRÁTICA</strong><br>
+                                Planos de ação práticos para aplicar na sua empresa imediatamente, sem enrolação. Vá direto ao ponto e obtenha resultados palpáveis.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 4 -->
+                    <div class="h-panel">
+                        <div class="h-panel-content">
+                            <div class="h-title-block">
+                                <h2 data-text="04. CRESCIMENTO" class="hover-target">04. CRESCIMENTO</h2>
+                            </div>
+                            <div class="h-desc-block">
+                                <strong style="color:var(--gold-primary); font-family:var(--font-bold); font-size:1.5rem; letter-spacing:2px;">O ALVO</strong><br>
+                                Resultados que se traduzem em previsibilidade, lucro e qualidade de vida. Um avanço seguro para o seu negócio.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Para Quem -->
+            <section class="para-quem-v3" id="para-quem">
+                <h2 class="pq-title">Este grupo é para você,<br> empresário que:</h2>
+                
+                <ul class="pq-list">
+                    <li class="hover-target">Busca jogar um outro nível de jogo.</li>
+                    <li class="hover-target">Quer aumentar vendas e faturamento.</li>
+                    <li class="hover-target">Está disposto a mudar e crescer a sua empresa.</li>
+                    <li class="hover-target">Busca acompanhamento direto para aumentar cada vez mais suas metas.</li>
+                </ul>
+
+                <div class="pq-center-btn">
+                    <a href="#aplicacao-form" class="btn-avant hover-target">Quero Saber Mais</a>
+                </div>
+            </section>
+
+            <!-- Entregáveis (O Que Recebe) -->
+            <section class="entregaveis-v3" id="entregaveis">
+                <h2 class="section-title fade-up">O QUE <span style="color:var(--gold-primary); font-family:var(--font-accent); font-style:italic;">VOCÊ RECEBE</span></h2>
+                <p class="section-subtitle fade-up">Uma esteira completa de acompanhamento para não deixar você estagnar.</p>
+
+                <div class="grid-entregaveis">
+                    <div class="entregavel-item fade-up hover-target">
+                        <div class="e-icon">♦</div>
+                        <h4>Encontros Quinzenais</h4>
+                        <p>Encontros online contínuos com todos os membros do clube.</p>
+                    </div>
+                    <div class="entregavel-item fade-up hover-target" style="transition-delay: 0.1s;">
+                        <div class="e-icon">⟡</div>
+                        <h4>Materiais Únicos</h4>
+                        <p>Materiais estruturais de altíssimo nível para a gestão empresarial.</p>
+                    </div>
+                    <div class="entregavel-item fade-up hover-target" style="transition-delay: 0.2s;">
+                        <div class="e-icon">⌬</div>
+                        <h4>Mentoria Individual</h4>
+                        <p>Diagnóstico individual para mapear seus gargalos atuais e destravar o crescimento contínuo.</p>
+                    </div>
+                    <div class="entregavel-item fade-up hover-target">
+                        <div class="e-icon">✷</div>
+                        <h4>On-boarding</h4>
+                        <p>Logo na entrada para destravar e já iniciar o programa alcançando um outro nível.</p>
+                    </div>
+                    <div class="entregavel-item fade-up hover-target" style="transition-delay: 0.1s;">
+                        <div class="e-icon">✦</div>
+                        <h4>Comunidade 24/7</h4>
+                        <p>Um grupo exclusivo no WhatsApp apenas para membros selecionados a dedo e aprovados.</p>
+                    </div>
+                    <div class="entregavel-item fade-up hover-target" style="transition-delay: 0.2s;">
+                        <div class="e-icon">✧</div>
+                        <h4>Eventos Presenciais</h4>
+                        <p>Passaporte garantido para os encontros presenciais de imersão do Winners Club.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resultados / Estatísticas -->
+            <section class="resultados-v3" id="resultados">
+                <h2 class="section-title fade-up">NOSSOS <span style="color:var(--gold-primary);">RESULTADOS</span></h2>
+                <p class="section-subtitle fade-up">Os números refletem o compromisso irrefutável dos nossos membros com a execução e o plano de ação.</p>
+
+                <div class="stats-grid-clean">
+                    <div class="stat-card-clean hover-target fade-up">
+                        <div class="c-icon">
+                            <h3 class="counter-v3" data-target="80">0</h3>
+                            <span>%</span>
+                        </div>
+                        <h3 class="stat-title">CRESCIMENTO</h3>
+                        <p>Crescimento validado e tangível no faturamento ao longo de 4 meses de aceleração.</p>
+                    </div>
+                    <div class="stat-card-clean hover-target fade-up" style="transition-delay: 0.1s;">
+                        <div class="c-icon">
+                            <span style="font-size: 1.5rem; margin-right: 10px;">+ de </span>
+                            <h3 class="counter-v3" data-target="20">0</h3>
+                        </div>
+                        <h3 class="stat-title">MEMBROS ATIVOS</h3>
+                        <p>Empreendedores fortes moldando e guiando o mercado nas suas respectivas áreas.</p>
+                    </div>
+                    <div class="stat-card-clean hover-target fade-up" style="transition-delay: 0.2s;">
+                        <div class="c-icon">
+                            <h3 class="guarantee">GARANTIDO</h3>
+                        </div>
+                        <h3 class="stat-title">ROI INTELIGENTE</h3>
+                        <p>Retorno incondicional sobre o seu investimento aliado aos esforços em estratégia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brutalist Culture Grid -->
+            <section class="culture-v3" id="cultura">
+                <div class="c-container">
+                    <h2 class="c-header-huge fade-up">A CULTURA</h2>
+                    <p class="section-subtitle fade-up" style="margin-top:-6rem;">Os pilares inegociáveis que sustentam os resultados dos nossos membros.</p>
+                    
+                    <div class="c-grid mt-4">
+                        <div class="c-item hover-target fade-up">
+                            <div class="c-icon">♦</div>
+                            <h3>POSICIONAMENTO DE VALOR</h3>
+                            <p>Sua empresa não pode ser apenas mais uma opção no mercado. Construímos marcas fortes que não brigam por preço, mas são escolhidas pelo alto valor que entregam.</p>
+                        </div>
+                        <div class="c-item hover-target fade-up" style="transition-delay: 0.1s;">
+                            <div class="c-icon">⌬</div>
+                            <h3>CRESCIMENTO SUSTENTÁVEL</h3>
+                            <p>Crescer a qualquer custo destrói a operação. Nosso foco é escalar o faturamento criando processos sólidos, previsibilidade e sem sacrificar a saúde da empresa.</p>
+                        </div>
+                        <div class="c-item hover-target fade-up" style="transition-delay: 0.2s;">
+                            <div class="c-icon">⟡</div>
+                            <h3>RETORNO DO INVESTIMENTO</h3>
+                            <p>Toda ação, contratação ou estratégia precisa ter um fim claro: colocar mais dinheiro no caixa. O jogo dos negócios é sobre lucro inteligente e mensurável.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Monolithic Application Form -->
+            <section class="app-section-v3" id="aplicacao-form">
+                <h2 style="font-family: var(--font-display); font-size: clamp(3rem, 8vw, 6rem); margin-bottom: 3rem; color:var(--gold-primary);" class="fade-up">SUA APLICAÇÃO.</h2>
+                <p class="section-subtitle fade-up" style="margin-top:-1rem;">Preencha rigorosamente o formulário abaixo para analisarmos o momento atual da sua empresa.</p>
+                
+                <div class="app-frame-wrapper hover-target fade-up" style="border-radius: 20px;">
+                    <iframe src="https://winnersclub.yayforms.link/3A5beXJ" loading="lazy" scrolling="no" frameborder="0"></iframe>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="faq-v3" id="faq">
+                <div class="faq-container">
+                    <h2 class="section-title fade-up" style="text-align: left; font-size: clamp(2.5rem, 5vw, 4rem);">DÚVIDAS <span style="color:var(--gold-primary); font-family:var(--font-accent); font-style:italic;">FREQUENTES</span></h2>
+                    
+                    <div class="accordion-v3 fade-up mt-4">
+                        <div class="acc-item">
+                            <div class="acc-head hover-target">
+                                Qual a duração do programa Winners Club?
+                                <span>+</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-inner">
+                                    A assinatura padrão é de 12 meses. Após esse período, você pode optar pela renovação para se manter atualizado e acompanhando a comunidade de maneira ativa.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <div class="acc-head hover-target">
+                                Preciso ter empresa aberta para participar?
+                                <span>+</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-inner">
+                                    O foco do grupo são empreendedores e líderes que já operam e desejam tracionar resultados. Porém, se você ocupa forte papel de decisão e liderança, tem grande potencial de absorção da nossa metodologia.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <div class="acc-head hover-target">
+                                Qual o valor do investimento?
+                                <span>+</span>
+                            </div>
+                            <div class="acc-content">
+                                <div class="acc-inner">
+                                    O passe para o nosso mastermind varia de acordo com lotes de expansão de vagas. Todo o lado financeiro e escopo de acesso será detalhado na sua call estratégica privada após a aprovação da aplicação.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contato / CTA Final -->
+            <section class="cta-v3" id="contato">
+                <h2 style="font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 5rem); color: #fff; margin-bottom: 2rem;" class="fade-up">MAIS INFORMAÇÕES.</h2>
+                <p class="section-subtitle fade-up">Toque no botão abaixo para falar diretamente com nossa equipe de concierge pelo WhatsApp.</p>
+                
+                <div class="fade-up" style="margin-top: 3rem;">
+                    <a href="https://wa.me/55996502738?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20uma%20vaga%20no%20Winners%20Club."
+                        class="btn-avant-solid hover-target" target="_blank" rel="noopener">Falar com a Equipe</a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer-v3">
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; text-align: left;">
+                    <span style="font-family: var(--font-bold); font-size: 1.2rem; color: #fff;">WINNERS CLUB</span>
+                    <span style="opacity: 0.7;">Sua comunidade tática e networking imbatível.</span>
+                </div>
+                
+                <div class="footer-links-v3">
+                    <a href="https://www.instagram.com/andressaperotti/" target="_blank" rel="noopener" class="hover-target">Andressa Perotti</a>
+                    <a href="https://www.instagram.com/resultamais.lideranca/" target="_blank" rel="noopener" class="hover-target">Resulta+ Liderança</a>
+                    <a href="https://www.youtube.com/@andressaperotti" target="_blank" rel="noopener" class="hover-target">YouTube</a>
+                </div>
+
+                <div style="text-align: right; opacity: 0.5;">
+                    <span>&copy; 2026 WINNERS CLUB</span><br>
+                    <span>Todos os direitos reservados.</span>
+                </div>
+            </footer>
+
+        </div>
     </div>
 
-    <main>
-        <!-- Section 1: Hero -->
-        <section class="hero" id="inicio">
-
-            <div class="container hero-container">
-                <div class="hero-content animate-hero">
-                    <h1 id="hero-title">Winners <br>Club</h1>
-                    <p class="hero-subtitle">Não é apenas teoria. É execução guiada, networking de altíssimo nível e
-                        clareza
-                        para o seu próximo grande salto.</p>
-
-                    <div class="hero-ctas">
-                        <a href="#aplicacao-form" class="btn-hero">Quero Participar</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Scroll Down Indicator -->
-            <div class="scroll-indicator animate-fade delay-3">
-                <span>Descubra Mais</span>
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 2: O que é (Pilares) -->
-        <section class="section content-vis" id="sobre">
-            <div class="container">
-                <div class="section-header animate-slide-up">
-                    <h2>O que é o <span class="gold-text">Winners Club</span>?</h2>
-                    <p>Uma comunidade de empresários, com foco em crescimento e aumento de faturamento, retorno
-                        financeiro e criação de uma cultura de sucesso para a empresa.</p>
-                </div>
-
-                <div class="grid-4 pillars-grid">
-                    <div class="card animate-slide-up delay-1">
-                        <h3>Mentoria</h3>
-                        <p>Acesso direto a mentores com experiência comprovada no campo de batalha empresarial.</p>
-                    </div>
-                    <div class="card animate-slide-up delay-2">
-                        <h3>Comunidade</h3>
-                        <p>Conviva com empresários que jogam o mesmo jogo que você. Você é a média das pessoas que te
-                            cercam.</p>
-                    </div>
-                    <div class="card animate-slide-up delay-3">
-                        <h3>Execução</h3>
-                        <p>Planos de ação práticos para aplicar na sua empresa imediatamente, sem enrolação.</p>
-                    </div>
-                    <div class="card animate-slide-up delay-4">
-                        <h3>Crescimento</h3>
-                        <p>Resultados que se traduzem em previsibilidade, lucro e qualidade de vida.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 3: Para quem é -->
-        <section class="section content-vis" id="para-quem">
-            <!-- Section 3: Para Quem -->
-            <section class="section content-vis" id="para-quem">
-                <div class="container">
-                    <div class="section-header animate-slide-up">
-                        <h2 class="gold-text">Este grupo é para você, empresário que:</h2>
-                    </div>
-
-                    <div class="center-content text-center animate-slide-up">
-                        <div class="para-quem-list-wrapper">
-                            <ul class="check-list">
-                                <li>Busca jogar um outro nível de jogo.</li>
-                                <li>Quer aumentar vendas, e faturamento.</li>
-                                <li>Está disposto a mudar e crescer a sua empresa.</li>
-                                <li>Busca acompanhamento direto para aumentar cada vez mais suas metas.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="center-btn mt-4 animate-slide-up">
-                        <a href="#aplicacao-form" class="btn-secondary">Quero saber mais</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 4: Entregáveis -->
-            <section class="section content-vis" id="entregaveis">
-                <div class="container">
-                    <div class="section-header animate-slide-up">
-                        <h2>O que <span class="gold-text">Você Recebe</span></h2>
-                        <p>Uma esteira completa de acompanhamento para não deixar você estagnar.</p>
-                    </div>
-
-                    <div class="grid-3 deliverables-grid">
-                        <div class="deliverable-item animate-slide-up delay-1">
-                            <div class="icon gold">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                    <path d="M12 14v4"></path>
-                                    <path d="M10 16l2-2"></path>
-                                </svg>
-                            </div>
-                            <h4>Encontros Quinzenais</h4>
-                            <p>Encontros online com todos os membros do clube.</p>
-                        </div>
-                        <div class="deliverable-item animate-slide-up delay-2">
-                            <div class="icon gold">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                </svg>
-                            </div>
-                            <h4>Materiais Únicos</h4>
-                            <p>Materiais para a gestão empresarial.</p>
-                        </div>
-                        <div class="deliverable-item animate-slide-up delay-3">
-                            <div class="icon gold">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <h4>Mentoria Individual</h4>
-                            <p>Diagnóstico individual para mapear seus gargalos atuais e destravar o crescimento.</p>
-                        </div>
-                        <div class="deliverable-item animate-slide-up delay-4">
-                            <div class="icon gold">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
-                                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
-                                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-                                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                                </svg>
-                            </div>
-                            <h4>On-boarding</h4>
-                            <p>Logo na entrada para destravar e já iniciar o programa alcançando um outro nível.</p>
-                        </div>
-                        <div class="deliverable-item animate-slide-up delay-5">
-                            <div class="icon gold">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                                </svg>
-                            </div>
-                            <h4>Comunidade 24/7</h4>
-                            <p>Um grupo exclusivo no WhatsApp apenas para membros selecionados a dedo.</p>
-                        </div>
-                        <div class="deliverable-item animate-slide-up delay-6">
-                            <div class="icon gold">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
-                                    <path d="M13 5v2"></path>
-                                    <path d="M13 17v2"></path>
-                                    <path d="M13 11v2"></path>
-                                </svg>
-                            </div>
-                            <h4>Eventos Presenciais</h4>
-                            <p>Passaporte garantido para os encontros presenciais de imersão do Winners Club.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 5: Resultados (Counters) -->
-            <section class="section content-vis" id="resultados">
-                <div class="container">
-                    <div class="section-header animate-slide-up">
-                        <h2>Nossos <span class="gold-text">Resultados</span></h2>
-                        <p>Os números refletem o compromisso dos nossos membros com a execução.</p>
-                    </div>
-
-                    <div class="stats-grid" id="stats">
-                        <div class="stat-box animate-scale">
-                            <h3 class="counter gold-text" data-target="80">0</h3><span>%</span>
-                            <p>Crescimento em 4 meses</p>
-                        </div>
-                        <div class="stat-box animate-scale delay-1">
-                            <span>+ de</span>
-                            <h3 class="counter gold-text" data-target="20">0</h3>
-                            <p>Membros Ativos</p>
-                        </div>
-                        <div class="stat-box animate-scale delay-2">
-                            <h3 class="gold-text">Garantido</h3>
-                            <p>ROI sobre investimento</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 6: Cultura do Winners Club -->
-            <section class="section content-vis" id="cultura">
-                <div class="container">
-                    <div class="section-header animate-slide-up">
-                        <h2>A Cultura do <span class="gold-text">Winners Club</span></h2>
-                        <p>Os pilares inegociáveis que sustentam os resultados dos nossos membros.</p>
-                    </div>
-
-                    <div class="values-grid mt-4"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                        <div class="card animate-slide-up" style="text-align: center; padding: 3rem 2rem;">
-                            <div class="value-icon gold" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 3h12l4 6-10 13L2 9Z"></path>
-                                    <path d="M11 3 8 9l4 13"></path>
-                                    <path d="M13 3l3 6-4 13"></path>
-                                    <path d="M2 9h20"></path>
-                                </svg>
-                            </div>
-                            <h3>Posicionamento de Valor</h3>
-                            <p class="text-muted mt-1">Sua empresa não pode ser apenas mais uma opção no mercado.
-                                Construímos marcas fortes que não brigam por preço, mas são escolhidas pelo alto valor
-                                que entregam.</p>
-                        </div>
-                        <div class="card animate-slide-up delay-1" style="text-align: center; padding: 3rem 2rem;">
-                            <div class="value-icon gold" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
-                                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
-                                </svg>
-                            </div>
-                            <h3>Crescimento Sustentável</h3>
-                            <p class="text-muted mt-1">Crescer a qualquer custo destrói a operação. Nosso foco é escalar
-                                o faturamento criando processos sólidos, previsibilidade e sem sacrificar a saúde da
-                                empresa.</p>
-                        </div>
-                        <div class="card animate-slide-up delay-2" style="text-align: center; padding: 3rem 2rem;">
-                            <div class="value-icon gold" style="font-size: 2.5rem; margin-bottom: 1.5rem;">
-                                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                                    <polyline points="16 7 22 7 22 13"></polyline>
-                                </svg>
-                            </div>
-                            <h3>Retorno do Investimento</h3>
-                            <p class="text-muted mt-1">Toda ação, contratação ou estratégia precisa ter um fim claro:
-                                colocar mais dinheiro no caixa. O jogo dos negócios é sobre lucro inteligente e
-                                mensurável.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 7: Formulário de Aplicação -->
-            <section class="section content-vis" id="aplicacao-form" style="padding-bottom: 2rem;">
-                <div class="container">
-                    <div class="section-header animate-slide-up" style="margin-bottom: 2rem;">
-                        <h2>Sua <span class="gold-text">Aplicação</span></h2>
-                        <p>Preencha o formulário abaixo para analisarmos o momento atual da sua empresa.</p>
-                    </div>
-
-                    <div class="animate-slide-up" style="width: 100%; max-width: 420px; min-height: 950px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 4px solid var(--border-color); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-                        <iframe src="https://winnersclub.yayforms.link/3A5beXJ" loading="lazy" width="100%" height="950px" scrolling="no" frameborder="0" style="background: transparent; border: none; overflow: hidden;"></iframe>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 8: FAQ -->
-            <section class="section content-vis" id="faq">
-                <div class="container faq-container">
-                    <div class="section-header animate-slide-up">
-                        <h2>Dúvidas <span class="gold-text">Frequentes</span></h2>
-                    </div>
-
-                    <div class="accordion animate-slide-up delay-1">
-                        <div class="accordion-item">
-                            <button class="accordion-header">Qual a duração do programa Winners Club?</button>
-                            <div class="accordion-content">
-                                <p>A assinatura padrão é de 12 meses. Após esse período, você pode optar pela renovação
-                                    para
-                                    se manter atualizado e acompanhando a comunidade.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <button class="accordion-header">Preciso ter empresa aberta para participar?</button>
-                            <div class="accordion-content">
-                                <p>O foco do grupo são empreendedores e líderes que já operam e desejam tracionar
-                                    resultados. Porém, se você ocupa forte papel de decisão e liderança, tem grande
-                                    potencial de absorção.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <button class="accordion-header">Qual o valor do investimento?</button>
-                            <div class="accordion-content">
-                                <p>O passe para o nosso mastermind varia de acordo com lotes de expansão de vagas. Todo
-                                    o
-                                    lado financeiro e escopo de acesso será detalhado na sua call estratégica após a
-                                    aplicação.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 9: Dúvidas / Contato -->
-            <section class="section content-vis" id="contato">
-                <div class="container">
-                    <div class="form-wrapper animate-slide-up">
-                        <div class="form-header">
-                            <h2>Mais <span class="gold-text">Informações</span>.</h2>
-                            <p>Toque no botão abaixo para falar diretamente com nossa equipe pelo WhatsApp.</p>
-                        </div>
-
-                        <div class="center-content text-center mt-4">
-                            <a href="https://wa.me/55996502738?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20uma%20vaga%20no%20Winners%20Club."
-                                class="btn-primary" target="_blank" rel="noopener noreferrer"
-                                style="display: inline-block; padding: 1.2rem 3rem; font-size: 1.1rem; width: auto;">Falar
-                                com a Equipe no WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="footer border-top bg-darker">
-        <div class="container footer-content">
-            <div class="brand">
-                <a href="#" class="logo">WINNERS CLUB</a>
-                <p class="text-muted mt-1">Sua comunidade tática e networking imbatível.</p>
-            </div>
-
-            <div class="footer-links-group" style="flex-direction: column; gap: 0.8rem; align-items: flex-start;">
-                <h4
-                    style="font-size: 1.1rem; margin-bottom: 0.2rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold);">
-                    Siga-nos</h4>
-                <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
-                    <a href="https://www.instagram.com/andressaperotti/" target="_blank" rel="noopener"
-                        aria-label="Instagram Andressa Perotti"
-                        style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500; opacity: 0.8; transition: var(--transition);"
-                        onmouseover="this.style.opacity='1'; this.style.color='var(--gold)';"
-                        onmouseout="this.style.opacity='0.8'; this.style.color='var(--text-primary)';">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                        <span>Andressa Perotti</span>
-                    </a>
-
-                    <a href="https://www.instagram.com/resultamais.lideranca/" target="_blank" rel="noopener"
-                        aria-label="Instagram Resulta+ Liderança"
-                        style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500; opacity: 0.8; transition: var(--transition);"
-                        onmouseover="this.style.opacity='1'; this.style.color='var(--gold)';"
-                        onmouseout="this.style.opacity='0.8'; this.style.color='var(--text-primary)';">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                        <span>Empresa Resulta+</span>
-                    </a>
-
-                    <a href="https://www.youtube.com/@andressaperotti" target="_blank" rel="noopener"
-                        aria-label="YouTube Andressa Perotti"
-                        style="display: flex; align-items: center; gap: 8px; color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500; opacity: 0.8; transition: var(--transition);"
-                        onmouseover="this.style.opacity='1'; this.style.color='var(--gold)';"
-                        onmouseout="this.style.opacity='0.8'; this.style.color='var(--text-primary)';">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
-                            </path>
-                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-                        </svg>
-                        <span>YouTube</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p class="text-muted">&copy; 2026 Winners Club. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- GSAP, ScrollTrigger and Lenis -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script defer src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
-
     <!-- Scripts -->
-    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
